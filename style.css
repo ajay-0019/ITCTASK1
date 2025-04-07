@@ -29,10 +29,26 @@
     padding: 15px;
     margin-bottom: 30px;
     text-align: center;
-  overflow-x: auto;
-  white-space: nowrap;
 
   }
+.nav-scroll {
+  overflow-x: auto;       /* Enables horizontal scroll */
+  white-space: nowrap;    /* Prevents wrapping */
+  width: 100%;            /* Full width */
+}
+
+.nav-scroll ul {
+  display: inline-flex;   /* Line up list items horizontally */
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.nav-scroll li {
+  padding: 10px 20px;
+  flex: 0 0 auto;         /* Prevent list items from shrinking */
+}
+
   
   nav ul {
     font-size:5px;
