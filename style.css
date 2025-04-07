@@ -262,14 +262,12 @@ body {
   max-width: 900px;
   margin: auto;
   background: #fff;
-  padding: 30px;
   border-radius: 15px;
  
 }
 
 .section {
   margin-bottom: 20px;
-  padding: 20px;
   border-radius: 10px;
   background-color: #f9f9f9;
   transition: background 0.4s;
