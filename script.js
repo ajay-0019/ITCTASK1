@@ -19,4 +19,20 @@ function handleSubmit(e) {
   alert("Thank you! Your message has been received.");
   e.target.reset();
 }
+  document.addEventListener('DOMContentLoaded', function () {
+      const questions = document.querySelectorAll('.faq-question');
   
+      // Loop through each question
+      questions.forEach(function (question) {
+          question.addEventListener('click', function () {
+              const answer = this.nextElementSibling; // Get the associated answer element
+  
+              // Toggle the answer visibility
+              if (answer.style.display === 'block') {
+                  answer.style.display = 'none';
+              } else {
+                  answer.style.display = 'block';
+              }
+          });
+      });
+  });
