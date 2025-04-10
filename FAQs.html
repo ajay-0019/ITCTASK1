@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FAQs</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="img/images.png" type="image/png" /> 
+    <link rel="icon" href="img/download.png" type="image/png" /> 
 </head>
 <body>
-    <nav>
+    <nav class="nav-scroll">
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
@@ -21,22 +21,39 @@
         <h1>Frequently Asked Questions (FAQs)</h1>
     
         <div class="faq-item">
-            <h2 class="faq-question">What is the Institute Technical Council (ITC)?</h2>
-            <p class="faq-answer">The ITC is the central body at IIT Bombay that promotes technical culture and innovation among students.</p>
+            <h2 class="faq-question">What is the process for joining the ITC Web Team,and are there any prerequisites or skills required?</h2>
+            <p class="faq-answer">To join the ITC Web Team, you need to submit an assignment, and after being shortlisted, you must clear the interview..</p>
         </div>
     
         <div class="faq-item">
-            <h2 class="faq-question">How can I get involved with ITC?</h2>
-            <p class="faq-answer">You can join various technical clubs, participate in events, or volunteer for committees organized by ITC.</p>
+            <h2 class="faq-question">What work needs to be done after joining the ITC Web Team?</h2>
+            <p class="faq-answer">After joining the ITC Web Team, you need to work on projects or fulfill the requirements of the institute, or enhance existing code.</p>
         </div>
     
         <div class="faq-item">
-            <h2 class="faq-question">What events does ITC organize?</h2>
-            <p class="faq-answer">ITC organizes a variety of events including workshops, hackathons, and technical competitions.</p>
+            <h2 class="faq-question">How many people are there in the ITC Web Team, and which academic years are they from?</h2>
+            <p class="faq-answer">The ITC Web Team consists of 4 conveners, 1 designer, and 1 manager . The convener and designer are first-year students, while the manager are second-year students.</p>
         </div>
     </main>
-    
-
+   <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const questions = document.querySelectorAll('.faq-question');
+  
+      // Loop through each question
+      questions.forEach(function (question) {
+          question.addEventListener('click', function () {
+              const answer = this.nextElementSibling; // Get the associated answer element
+  
+              // Toggle the answer visibility
+              if (answer.style.display === 'block') {
+                  answer.style.display = 'none';
+              } else {
+                  answer.style.display = 'block';
+              }
+          });
+      });
+  });
+</script>  
     
 </body>
 </html>
