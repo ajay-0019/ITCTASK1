@@ -19,23 +19,4 @@ function handleSubmit(e) {
   alert("Thank you! Your message has been received.");
   e.target.reset();
 }
-    const questions = document.querySelectorAll('.faq-question');
-
-// Loop through each question
-questions.forEach(function (question) {
-question.addEventListener('click', function () {
-// First, hide all answers
-const allAnswers = document.querySelectorAll('.faq-answer');
-allAnswers.forEach(function (answer) {
-  answer.style.display = 'none';
-});
-
-// Then, find the answer next to the clicked question and toggle it
-const answer = this.nextElementSibling;
-if (answer.style.display === 'block') {
-  answer.style.display = 'none';
-} else {
-  answer.style.display = 'block';
-}
-});
-});
+  
