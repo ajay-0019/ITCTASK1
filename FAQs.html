@@ -35,25 +35,7 @@
             <p class="faq-answer">The ITC Web Team consists of 4 conveners, 1 designer, and 1 manager . The convener and designer are first-year students, while the manager are second-year students.</p>
         </div>
     </main>
-   <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      const questions = document.querySelectorAll('.faq-question');
-  
-      // Loop through each question
-      questions.forEach(function (question) {
-          question.addEventListener('click', function () {
-              const answer = this.nextElementSibling; // Get the associated answer element
-  
-              // Toggle the answer visibility
-              if (answer.style.display === 'block') {
-                  answer.style.display = 'none';
-              } else {
-                  answer.style.display = 'block';
-              }
-          });
-      });
-  });
-</script>  
+ 
     
 </body>
 </html>
