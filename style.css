@@ -268,7 +268,15 @@ background: #fff;
 border-radius: 15px;
 
 }
+.content {
+margin-top: 10px;
+color: #444;
+font-size: 1em;
+}
 
+.content ul {
+padding-left: 20px;
+}
 .section {
 margin-bottom: 20px;
 border-radius: 10px;
